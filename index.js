@@ -1,4 +1,4 @@
-let currentTime = (hour, min, sec) => `${Math.max(1, hour)}:${min}:${sec}`;
+let currentTime = (hour, min, sec) => `${Math.max(1, hour % 3)}:${min}:${sec}`;
 
 setInterval(() => {
   const date = new Date();
